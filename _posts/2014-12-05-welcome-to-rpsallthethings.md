@@ -2,6 +2,11 @@
 layout: post
 title:  "Welcome to RPS All the Things"
 date:   2014-12-05 15:51:00
+authors:
+- name: Oskar Wickstrom
+  twitter: owickstrom
+- name: Jan Kronquist
+  twitter: jankronquist
 ---
 
 ## Introduction

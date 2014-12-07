@@ -8,6 +8,24 @@ layout: default
       {{ page.date | date_to_long_string }}
     </time>
   </p>
+  <p class="authors">
+  By
+  {% assign authorCount = page.authors | size %}
+  {% for author in page.authors %}
+      {% if forloop.last %}
+      and
+      {% elsif forloop.first %}
+      {% else %}
+      ,
+      {% endif %}
+
+      {% if author.twitter %}
+      <a href="https://twitter.com/{{ author.twitter }}" rel="author">{{ author.name }}</a>
+      {% else %}
+      {{ author.name }}
+      {% endif %}
+  {% endfor %}
+  </p>
 </header>
 
 <main>
