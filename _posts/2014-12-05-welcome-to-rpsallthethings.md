@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to RPS All the Things"
+title:  "Introducing RPS All the Things"
 date:   2014-12-05 15:51:00
 authors:
 - name: Oskar Wickstrom
