@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $variant-family, sans-serif;
+  font-weight: normal;
 }
 
 h1 {
@@ -46,13 +46,12 @@ h1 {
 }
 
 h2 {
-  font-size: 180%;
-  font-style: italic;
+  font-size: 160%;
   margin: 0 0 $spacing-xs;
 }
 
 h3 {
-  font-size: 150%;
+  font-size: 140%;
   font-weight: lighter;
   margin: 0 0 $spacing-xs;
 }
@@ -90,5 +89,14 @@ a {
   &:hover,
   &:active {
     text-decoration: underline;
+  }
+}
+
+main {
+  text-align: justify;
+
+  p + p {
+    margin-top: -1.3em;
+    text-indent: 2em;
   }
 }
