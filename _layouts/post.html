@@ -33,7 +33,6 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.next or page.previous %}
   <nav class="post-nav">
     {% if page.next %}
       <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
@@ -60,7 +59,6 @@ layout: default
       </a>
     {% endif %}
 
-  {% endif %}
   </nav>
 
 </main>
