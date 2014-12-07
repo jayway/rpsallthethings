@@ -16,56 +16,15 @@
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-
-    <div class="off-canvas">
-      <figure class="avatar">
-        <img src="{{ site.baseurl }}/assets/img/jay.svg" alt="Picture" title="That's me, {{ site.author }}.">
-      </figure>
-      <div class="bio">
-          <h1>Hi, we are {{ site.author }}.</h1>
-          <p>{{ site.author-bio }}</p>
-      </div>
-      <nav>
-        <h6>Follow me on</h6>
-        <ul>
-          {% if site.twitter %}
-          <li><a target="_blank" href="http://twitter.com/{{ site.twitter }}">Twitter</a></li>
-          {% endif %}
-          {% if site.github %}
-          <li><a target="_blank" href="{{ site.github }}">Github</a></li>
-          {% endif %}
-          {% if site.dribbble %}
-          <li><a target="_blank" href="{{ site.dribbble }}">Dribbble</a></li>
-          {% endif %}
-          {% if site.instagram %}
-          <li><a target="_blank" href="{{ site.instagram }}">Instagram</a></li>
-          {% endif %}
-        </ul>
-      </nav>
-    </div>
-
 
     <div class="site-wrapper">
-
-      <header>
-        <div class="h-wrap">
-          <h1 class="title"><a href="{{ site.baseurl }}/" title="Back to Homepage">{{ site.name }}</a></h1>
-          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
-        </div>
-      </header>
-
-      <main>
-        {{ content }}
-      </main>
+      {{ content }}
 
       <footer>
-        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</small>
+        <p><a href="{{ site.baseurl }}/">{{ site.name }}</a> - Powered by Jekyll - Theme based on <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; {{ site.author }}</p>
       </footer>
 
-    </div> 
+    </div>
     {% comment %} site-wrapper {% endcomment %}
 
     <script src="{{ site.baseurl }}/js/main.js"></script>

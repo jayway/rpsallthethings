@@ -11,7 +11,8 @@
   font-style: normal;
 }
 
-.icon-twitter, .icon-github, .icon-dribbble, .icon-instagram {
+.icon-twitter,
+.icon-github {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -25,17 +26,6 @@
 .icon-twitter:before {
   content: "\e002";
 }
-
-// If you need github, dribbble or instagram font icons, well there're here :)
-
 .icon-github:before {
   content: "\e003";
-}
-
-.icon-dribbble:before {
-  content: "\e004";
-}
-
-.icon-instagram:before {
-  content: "\e005";
 }

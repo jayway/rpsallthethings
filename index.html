@@ -3,39 +3,47 @@ layout: default
 title: Homepage
 ---
 
-<div id="home">
-  <ul class="posts">
-    {% for post in site.posts %}
-    <li itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
-        <div class="p-wrap">
-          <time datetime="{{ post.date | date_to_xmlschema }}"
-              itemprop="datePublished">
-            {{ post.date | date_to_string }}
-          </time>
-          <p itemprop="name headline">{{ post.title }}</p>
-        </div>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+<header>
+  <h1>
+    <a href="{{ site.baseurl }}/" title="{{ site.name }}">{{ site.name }}</a>
+  </h1>
+  <p class="subtitle">
+    {{site.description }}
+  </p>
+</header>
 
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-  {% if paginator.next_page %}
-  <a href="/page/{{paginator.next_page}}" class="older">Older</a>
-  {% else %}
-  <span class="next">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-    <a href="/" class="newer">Newer</a>
+<main>
+  <nav>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date_to_string }}
+        </time>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.next_page %}
+    <a href="/page/{{paginator.next_page}}" class="older">Older</a>
     {% else %}
-    <a href="/page/{{paginator.previous_page}}" class="newer">Newer</a>
+    <span class="next">Older</span>
     {% endif %}
-  {% else %}
-  <span class="previous">Newer</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+      <a href="/" class="newer">Newer</a>
+      {% else %}
+      <a href="/page/{{paginator.previous_page}}" class="newer">Newer</a>
+      {% endif %}
+    {% else %}
+    <span class="previous">Newer</span>
+    {% endif %}
+  </div>
   {% endif %}
-</div>
-{% endif %}
+</main>

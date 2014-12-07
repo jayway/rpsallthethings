@@ -20,15 +20,19 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: $bg-color;
   @media (max-width: 942px) {
-    font-size: $font-size-m; 
+    font-size: $font-size-m;
   }
   @media (max-width: 642px) {
-    font-size: $font-size-s; 
+    font-size: $font-size-s;
   }
+
+  padding: 1em;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3,
 h4,
 h5,
@@ -36,57 +40,55 @@ h6 {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 { 
-  font-size: 250%; 
-  margin: $spacing-xs 0;
+h1 {
+  font-size: 220%;
+  margin: 0;
 }
 
-h2 { 
-  font-size: 180%; 
-  font-style: italic; 
-  margin: $spacing-s 0 $spacing-xs;
+h2 {
+  font-size: 180%;
+  font-style: italic;
+  margin: 0 0 $spacing-xs;
 }
 
-h3 { 
-  font-size: 150%; 
-  font-weight: lighter; 
-  margin: $spacing-sm 0 $spacing-xs;
+h3 {
+  font-size: 150%;
+  font-weight: lighter;
+  margin: 0 0 $spacing-xs;
 }
 
-h4 { 
-  font-size: 80%; 
+h4 {
+  font-size: 80%;
   font-weight: bold;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   letter-spacing: 3px;
-  margin: $spacing-l 0 $spacing-xs;
+  margin: 0 0 $spacing-xs;
   color: lighten($text-color, 40%);
 }
 
-h5 { 
-  @extend h4;
+h5 {
   text-align: center;
 }
 
-h6 { 
-  @extend h4;
+h6 {
   text-align: right;
 }
 
-p { 
-  margin: 1.3em 0; 
+p {
+  margin: 1.3em 0;
   line-height: 1.6;
 }
 
-small { 
-  font-size: 60%; 
+small {
+  font-size: 60%;
 }
 
-ul li { list-style-type: circle; }
-ol li { list-style-type: decimal; }
+a {
+  color: $link-color;
+  text-decoration: none;
 
-a { 
-  color: $link-color; 
-  &:hover {
-    color: $text-color;
+  &:hover,
+  &:active {
+    text-decoration: underline;
   }
 }

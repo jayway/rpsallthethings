@@ -1,64 +1,22 @@
-.posts { 
-  overflow: hidden;
-  li { 
-    display: inline-block; 
-    width: 100%; 
-    border-bottom: 1px solid darken($main-color, 6%); 
-    
-    &:first-child {
-      border-top: 1px solid darken($main-color, 6%); 
-    }
+ul.posts {
+  list-style-type: none;
+  margin: 0;
+  padding: 2em 1em;
 
-    .p-wrap {
-      padding: $spacing-ml $spacing-m;
-      background: $main-color; 
-      transition: all .15s ease-in;
-      &:active { 
-        background: darken($main-color, 3%);
-      }
-      &:hover {
-        background: lighten($main-color, 3%); 
-        padding-left: $spacing-m + $spacing-s;
-        &::after {
-          content:'\2192'; 
-          margin-left: $spacing-xs;
-          @media (max-width: 942px) {
-            content: none;
-            margin: 0;
-          }
-        }
-      }
-      @media (max-width: 942px) {
-        padding: $spacing-m $spacing-m;
-      }
-      p {
-        display: inline;
-        margin: $spacing-xs 0 0;
-      }
-    } // end .p-wrap
-
+  li {
+    text-align: center;
+    margin-bottom: 1em;
     time {
-      color: darken($main-color, 20%); 
-      padding-right: $spacing-s;
-      @media (max-width: 942px) {
-        display: block;
-      }
+      display: block;
+      margin-bottom: .5em;
+      font-size: 80%;
+      color: #888;
     }
-
-    a {
-      color: white; 
-      text-decoration: none;
-    }
-
-  } // end li
-} // end .posts
+  }
+}
 
 .pagination {
-  overflow: hidden;
-  margin-top: 40px;
-  color: lighten($text-color, 60%);
-  text-align: center;
-  border: 1px solid $border-color;
+  color: #888;
 
   a, span {
     box-sizing: border-box;
@@ -69,12 +27,6 @@
 
     &:first-child {
       text-decoration: none;
-      border-right: 1px solid $border-color;
     }
-  }
-
-  a:hover {
-      text-decoration: none;
-      background-color: darken($smoke-color, 5%);
   }
 } // end .pagination
