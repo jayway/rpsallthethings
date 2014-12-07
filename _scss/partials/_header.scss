@@ -3,7 +3,6 @@ header {
   margin-bottom: 2em;
 
   h1 {
-    font-family: $variant-family;
     margin-bottom: .25em;
     color: $header-color;
   }
@@ -21,7 +20,6 @@ header {
   }
 
   .subtitle {
-    font-family: $variant-family;
     font-size: 85%;
     padding: 0 $spacing-s;
     margin: 0;
