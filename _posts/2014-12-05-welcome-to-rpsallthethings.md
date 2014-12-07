@@ -7,8 +7,10 @@ date:   2014-12-05 15:51:00
 This will be great.
 
 {% highlight clojure %}
-(def some-function [a b] [b a])
+(defn some-function [a b] [b a])
 {% endhighlight %}
+
+And some Javascript...
 
 {% highlight javascript %}
 function supercool() {
