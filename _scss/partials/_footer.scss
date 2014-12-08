@@ -4,4 +4,9 @@ footer {
   text-align: center;
   font-size: 60%;
   color: $footer-color;
+
+  img {
+    display: inline-block;
+    height: 3em;
+  }
 }
