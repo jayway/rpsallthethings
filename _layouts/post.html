@@ -9,8 +9,10 @@ layout: default
     </time>
   </p>
   <p class="authors">
-  By
   {% assign authorCount = page.authors | size %}
+  {% if authorCount > 0 %}
+  By
+  {% endif %}
   {% for author in page.authors %}
       {% if forloop.last %}
       and
@@ -35,8 +37,8 @@ layout: default
 
   <nav class="post-nav">
     {% if page.next %}
-      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" id="next">
-        <span class="nav-title nav-title-next">Newer</span> &rarr;
+      <a rel="next" href="{{ site.baseurl }}{{ page.next.url }}" class="next">
+        <span class="nav-title nav-title-next">Newer</span>
       </a>
     {% endif %}
 
@@ -54,8 +56,8 @@ layout: default
     </div>
 
     {% if page.previous %}
-      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" id="prev">
-        &larr; <span class="nav-title nav-title-prev">Older</span>
+      <a rel="prev" href="{{ site.baseurl }}{{ page.previous.url }}" class="prev">
+        <span class="nav-title nav-title-prev">Older</span>
       </a>
     {% endif %}
 

@@ -2,12 +2,17 @@
 // https://gist.github.com/edwardhotchkiss/2005058
 
 .highlight {
-  box-shadow: 1px 1px 2px #93a1a1;
-  padding: $spacing-s $spacing-s;
+  box-shadow: 2px 2px 0 #eee8d5;
   background-color: #fdf6e3;
   font-size: 80%;
   margin: $spacing-m auto;
   color: lighten($text-color, 30%);
+  overflow: auto;
+
+  pre {
+    padding: 1em;
+    overflow: visible;
+  }
 }
 
 code {

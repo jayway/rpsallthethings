@@ -19,14 +19,7 @@ ul.posts {
   color: #888;
 
   a, span {
-    box-sizing: border-box;
     float: left;
     width: 50%;
-    padding: 20px;
-    text-decoration: none;
-
-    &:first-child {
-      text-decoration: none;
-    }
   }
 } // end .pagination

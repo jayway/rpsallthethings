@@ -1,6 +1,7 @@
 ul,
 ol {
   margin: $spacing-m 0;
+  padding: 0 2em;
   li {
     margin-bottom: $spacing-xs;
   }
@@ -53,16 +54,28 @@ main nav.post-nav {
 
 // Pagination
 
-#prev,
-#next {
+.prev,
+.next {
   position: absolute;
   z-index: 1;
 }
 
-#prev {
+.prev {
   left: 0;
+
+  &:before {
+    display: inline-block;
+    content: '\2190 ';
+    margin-right: .25em;
+  }
 }
 
-#next {
+.next {
   right: 0;
+
+  &:after {
+    display: inline-block;
+    content: ' \2192';
+    margin-left: .25em;
+  }
 }
