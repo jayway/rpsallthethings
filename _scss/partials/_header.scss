@@ -4,27 +4,22 @@ header {
 
   h1 {
     margin-bottom: .25em;
-    color: $header-color;
   }
 
   a {
     display: inline-block;
     text-decoration: none;
-    color: $header-color;
-
-    &:hover,
-    &:active {
-      text-decoration: underline;
-      color: $header-color;
-    }
+    color: $text-color;
   }
 
   .subtitle {
-    font-size: 85%;
+    font-size: 80%;
+    text-transform: uppercase;
     padding: 0 $spacing-s;
-    margin: 0;
+    margin: 0 auto;
     letter-spacing: 1px;
     color: #888;
+    max-width: 600px;
   }
 
   .authors {
