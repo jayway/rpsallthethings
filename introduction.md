@@ -1,19 +1,13 @@
 ---
-layout: post
-title:  "Introducing RPS All the Things"
-date:   2015-01-05 15:51:00
-authors:
-- name: Jan Kronquist
-  twitter: jankronquist
-- name: Oskar Wickstrom
-  twitter: owickstrom
+layout: page
+title:  "Introduction"
 ---
 
 ## Background
 
 Initially when starting to learn more about Domain Driven Design and had discussions around which patterns to apply it often came down to "it depends". What we realized was that in order to have meaningful discussions we needed a concrete domain in which to apply the patterns. Our initial attempt was to model a restaurant with menus, reciepes, inventory etc, incidentally while eating a pizza. Although we like pizza, we realized that this domain was a bit boring. We couldn't really motivate why we needed to apply CQRS and event sourcing for a single restaurant. What we wanted was a domain that:
 
-* is fun 
+* is fun
 * has inherent challenges, eg many concurrent users
 * is simple and easy to understand
 * has room for exploration
