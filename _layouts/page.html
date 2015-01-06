@@ -13,9 +13,10 @@ layout: default
 
   <nav class="post-nav">
     <div class="actions">
+      {% capture share_text %}{{ site.name }} - {{page.title}} {{ site.url }}{{ site.baseurl }}{{ page.url }} #rpsallthethings{% endcapture %}
       <a class="share"
         title="Share on Twitter"
-        href="http://twitter.com/share" class="popup">
+        href="https://twitter.com/intent/tweet?text={{ share_text | uri_escape }}">
         <span class="icon-twitter"></span>
       </a>
       <a class="edit"
