@@ -8,8 +8,15 @@ header {
 
   a {
     display: inline-block;
+  }
+
+  h1 a {
     text-decoration: none;
     color: $text-color;
+  }
+
+  .home {
+    margin-bottom: 1em;
   }
 
   .subtitle {
