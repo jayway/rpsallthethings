@@ -31,3 +31,7 @@ One of the purposes is to explore different architectures and sometimes you also
 
 Another thing that is not in scope is to update old blog posts and code bases as we learn more about the domain or some technique. New entries will of course reference old material! As always, please note the time when things were published and be aware the newer material may be available. The purpose of this site is only to make it easier to find the various experiments.
 
+## Projects
+
+Interested? Then go check out the [Projects](../projects/).
+
