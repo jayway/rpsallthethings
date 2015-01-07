@@ -27,7 +27,7 @@ The goal of this site is to collect all these experiments in one place and encou
 
 ## What is not in scope?
 
-One of the purposes is to explore different architectures and sometimes you also only want to explore a part of the domain. This means that all solutions will not be identical, since different tradeoffs are made. For example, it would be very interesting to see how a classic SQL + Spring MVC solution compares to an event sourced solution. What is easy to do with SQL? With events?
+All experiments will not solve exactly the same problem, since sometimes different tradeoffs have to be made. One of the purposes is to explore different architectures and sometimes we also only want to explore only a part of the domain. 
 
 Another thing that is not in scope is to update old blog posts and code bases as we learn more about the domain or some technique. New entries will of course reference old material! As always, please note the time when things were published and be aware the newer material may be available. The purpose of this site is only to make it easier to find the various experiments.
 
@@ -35,3 +35,11 @@ Another thing that is not in scope is to update old blog posts and code bases as
 
 Interested? Then go check out the [Projects](../projects/).
 
+Here are some random ideas for the future:
+
+* Microservices och messaging
+* Timeseries databases
+* Client push (for example when other player has made a move)
+* Deployment on different cloud providers
+* More about REST API design
+* Single page web vs server generated responsive web
