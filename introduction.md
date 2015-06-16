@@ -35,7 +35,7 @@ Another thing that is not in scope is to update old blog posts and code bases as
 
 Interested? Then go check out the [Projects](../projects/).
 
-Here are some random ideas for the future:
+## Ideas for future projects
 
 * Microservices och messaging
 * Timeseries databases
