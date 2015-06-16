@@ -34,12 +34,3 @@ Another thing that is not in scope is to update old blog posts and code bases as
 ## Projects
 
 Interested? Then go check out the [Projects](../projects/).
-
-## Ideas for future projects
-
-* Microservices och messaging
-* Timeseries databases
-* Client push (for example when other player has made a move)
-* Deployment on different cloud providers
-* More about REST API design
-* Single page web vs server generated responsive web

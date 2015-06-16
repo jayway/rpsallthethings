@@ -15,7 +15,8 @@ title:  "Projects"
 
 ## Micro services
 
-* [2014-02-11 - Lab - Microservices using RabbitMQ](https://github.com/johanhaleby/lab-service-registry/blob/master/LAB.md) [rps service](https://github.com/jankronquist/simple-rps-service)
+* [2014-02-11 - Lab - Microservices using RabbitMQ](https://github.com/johanhaleby/lab-service-registry/blob/master/LAB.md)
+  * [RPS Service](https://github.com/jankronquist/simple-rps-service)
 
 ## Datomic
 
@@ -25,3 +26,12 @@ title:  "Projects"
 ## REST and Hypermedia
 
 * [2014-06-13 - Talk - Constructing Hypermedia APIs](http://vimeo.com/99524301) [slides](http://www.slideshare.net/jankronquist/hypermedia-apis-geekout)
+
+## Ideas for future projects
+
+* Microservices och messaging
+* Timeseries databases
+* Client push (for example when other player has made a move)
+* Deployment on different cloud providers
+* More about REST API design
+* Single page web vs server generated responsive web
