@@ -3,6 +3,10 @@ layout: page
 title:  "Projects"
 ---
 
+## Cloud
+
+* [2016-05-20 - Lab - Running RPS using Service Fabric](https://github.com/jayway/ServiceFabric-Lab)
+
 ## Eventsourcing
 
 * [2014-10-23 - Blog - Creating an API – using ASP.NET Web Api](http://www.jayway.com/2014/10/23/creating-an-api-for-a-rock-paper-scissors-game-using-asp-net-web-api/)
